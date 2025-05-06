@@ -8,14 +8,15 @@
     "mongoose": "^8.14.1"
   },
   "type": "module",
-"scripts": {
-  "dev": "ts-node-esm src/index.ts",
-  "build": "tsc",
-  "start": "node dist/index.js"
-},
+  "scripts": {
+    "dev": "ts-node-esm src/index.ts",
+    "build": "tsup src/index.ts --out-dir dist --format esm",
+    "start": "node dist/index.js"
+  },
   "devDependencies": {
     "@types/node": "^22.15.3",
     "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.3"
   }
 }
