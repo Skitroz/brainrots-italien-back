@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import Quiz from "../models/Quiz.ts";
+import Quiz from "../models/Quiz";
 
 export const createQuiz = async (req: Request, res: Response) => {
   try {
